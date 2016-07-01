@@ -1,0 +1,62 @@
+/*
+HEADER
+========================================================================
+*/
+header {
+  background-color: white;
+}
+.shape {
+	display: block;
+	height: 3em;
+	float: left;
+}
+.trapezoid {
+	border-bottom: 116px solid $purple;
+	border-left: 0 solid transparent;
+	border-right: 3em solid transparent;
+	height: 0;
+	width: 60px;
+	margin-left: -2em;
+	@media screen and ($break-md) {
+		width: 400px;
+	}
+	@media screen and ($break-lg) {
+		border-bottom: 13.5em solid #4C1E3D;
+	    border-left: 0 solid transparent;
+	    border-right: 6em solid transparent;
+	    height: 0;
+	    width: 400px;
+	}
+	@media screen and ($break-xlg) {
+		width: 600px;
+	}
+	@media screen and ($break-xxlg) {
+		width: 800px;
+	}
+}
+.triangle {
+	width: 0px;
+    height: 0px;
+    border-left: 3em solid transparent;
+    border-right: 3em solid transparent;
+    border-top: 7.3em solid $purple-tint-50;
+    margin-left: -3em;
+    @media screen and ($break-md) {
+    	border-left: 6em solid transparent;
+	    border-right: 6em solid transparent;
+	    margin-left: -6em;
+    }
+    @media screen and ($break-lg) {
+    	width: 0px;
+	    height: 0px;
+	    border-left: 8em solid transparent;
+	    border-right: 8em solid transparent;
+	    border-top: 13.5em solid #a58e9e;
+	    margin-left: -8em;
+    }
+}
+.header-deco {
+	display: block;
+	position: absolute;
+	left: 0;
+}

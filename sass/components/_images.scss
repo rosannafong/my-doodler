@@ -1,0 +1,25 @@
+/*
+IMAGES
+========================================================================
+*/
+
+/* Responsive images
+------------------------------------------------------------------------*/
+.img-responsive {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+/* Logo
+------------------------------------------------------------------------*/
+.logo {
+	width: 210px;
+	height: 116px;
+	float: right;
+
+	@media screen and ($break-lg) {
+		width: auto;
+		height: auto;
+	}
+}

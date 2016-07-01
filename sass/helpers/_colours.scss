@@ -1,0 +1,24 @@
+/*
+COLOURS
+========================================================================
+*/
+
+/* Base colours
+------------------------------------------------------------------------*/
+$black: #272123;
+$cream: #E5E5E5;
+$dark-orange: #B84530;
+$orange: #CF6F3A;
+$yellow: #DB8F30;
+$blue: #007499;
+$purple: #4C1E3D;
+
+/* Tints
+------------------------------------------------------------------------*/
+$purple-tint-25: tint($purple, 20%);
+$purple-tint-50: tint($purple, 50%);
+$purple-tint-75: tint($purple, 75%);
+
+$blue-tint-25: tint($blue, 20%);
+$blue-tint-50: tint($blue, 50%);
+$blue-tint-75: tint($blue, 75%);

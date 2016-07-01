@@ -1,0 +1,15 @@
+/*
+WRAPPERS
+========================================================================
+*/
+
+/* Content wrapper
+------------------------------------------------------------------------*/
+.wrapper {
+    display: block;
+    background-color: white;
+    @include border-radius(.5em);
+    margin: 1em 0;
+    min-height: 20em;
+    padding: .5em 1.5em;
+}

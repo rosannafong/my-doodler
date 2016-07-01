@@ -1,0 +1,64 @@
+/*
+TABS
+========================================================================
+*/
+
+/* Tab content
+------------------------------------------------------------------------*/
+.tab-links a {
+	display: block;
+    color: white;
+    text-decoration: none;
+    padding: 1em;
+    transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+    background-color: $purple-tint-50;
+    text-decoration: underline;
+}
+.tab-links > li {
+	background-color: $blue;
+	width: 50%;
+  	text-align: center;
+  	@media screen and ($break-lg) {
+  		font-size: 1.5em;
+  	}
+}
+.tab-links li:hover {
+	cursor: pointer;
+	background-color: $purple-tint-50;
+  a {
+    color: $black;
+  }
+}
+
+.tab-links li.active {
+  	background-color: $blue-tint-50;
+  	color: white;
+ }
+
+.tab-links li.active:hover,
+.tab-links li.active a:hover {
+	background: $blue-tint-50;
+	text-decoration: none;
+	cursor: auto;
+}
+
+.tab-links li.active a {
+	color: $black;
+}
+
+/* Tab content
+------------------------------------------------------------------------*/
+.tab-content {
+    background: none;
+}
+
+.tab {
+    display: none;
+}
+
+.tab.active {
+    display: block;
+}

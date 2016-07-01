@@ -1,0 +1,14 @@
+/*
+DOODLE WIDGET
+========================================================================
+*/
+
+#doodle-widget {
+	display: block;
+	cursor: pointer;
+	padding: 0;
+
+	@media screen and ($break-md) {
+		min-height: 40em;
+	}
+}

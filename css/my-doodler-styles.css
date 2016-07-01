@@ -1,0 +1,743 @@
+/*Table of contents
+1. Breakpoints
+    1.1 Small screens
+    1.2 Medium screens
+    1.3 Large screens
+    1.4 Extra Large screens
+=====================================================================================================
+*/
+/*1. Breakpoints
+=====================================================================================================*/
+/*1.1 Small screens
+------------------------*/
+/*1.2 Medium screens
+------------------------*/
+/*1.3 Large screens
+------------------------*/
+/*1.4 Extra Large screens
+------------------------*/
+/*1.5 Extra extra Large screens
+------------------------*/
+/*
+COLOURS
+========================================================================
+*/
+/* Base colours
+------------------------------------------------------------------------*/
+/* Tints
+------------------------------------------------------------------------*/
+/*
+GRID
+========================================================================
+*/
+/* Susy grid
+------------------------------------------------------------------------*/
+*, *:before, *:after {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.container {
+  max-width: 25em;
+  margin-left: auto;
+  margin-right: auto;
+  overflow: hidden;
+  padding: 0 1em;
+}
+.container:after {
+  content: " ";
+  display: block;
+  clear: both;
+}
+@media screen and (min-width: 25em) {
+  .container {
+    max-width: 34.375em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media screen and (min-width: 40.063em) {
+  .container {
+    max-width: 46.875em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media screen and (min-width: 64.063em) {
+  .container {
+    max-width: 62.5em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+@media screen and (min-width: 90.063em) {
+  .container {
+    max-width: 75em;
+    margin-left: auto;
+    margin-right: auto;
+  }
+  .container:after {
+    content: " ";
+    display: block;
+    clear: both;
+  }
+}
+
+.row {
+  display: block;
+}
+@media screen and (min-width: 64.063em) {
+  .row {
+    margin: 0 -0.6em;
+  }
+}
+
+.row:before,
+.row:after {
+  display: table;
+  content: "";
+  box-sizing: border-box;
+  clear: both;
+}
+
+.col-1,
+.col-2,
+.col-3,
+.col-4,
+.col-5,
+.col-6,
+.col-7,
+.col-8,
+.col-9,
+.col-10,
+.col-11,
+.col-12 {
+  min-height: 1px;
+  margin-bottom: 1.75em;
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-1 {
+    width: 8.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-2 {
+    width: 16.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-3 {
+    width: 25%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-4 {
+    width: 33.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-5 {
+    width: 41.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-6 {
+    width: 50%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-7 {
+    width: 58.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-8 {
+    width: 66.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-9 {
+    width: 75%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-10 {
+    width: 83.33333%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-11 {
+    width: 91.66667%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+@media screen and (min-width: 64.063em) {
+  .col-12 {
+    width: 100%;
+    float: left;
+    padding-left: 0.83333%;
+    padding-right: 0.83333%;
+  }
+}
+
+/*
+TYPOGRAPHY
+========================================================================
+*/
+/* Vertical rhythm
+------------------------------------------------------------------------*/
+html,
+body {
+  font-family: Arial, 'Helvetica Neue', Helvetica, sans-serif;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6em;
+  line-height: 1.5;
+}
+
+p,
+ul,
+ol,
+dl,
+blockquote,
+pre,
+td,
+th,
+textarea {
+  font-size: 1em;
+  /* equiv 16px */
+  line-height: 1.5;
+  margin: 1.5em 0;
+}
+
+h1,
+.h1-like {
+  font-size: 2.9375em;
+  /* equiv 47px */
+  line-height: 1.0212;
+  margin: 1.0212em 0 .5106em 0;
+}
+
+h2,
+.h2-like {
+  font-size: 2.4375em;
+  /* equiv 39px */
+  line-height: 1.2308;
+  margin: 1.2308em 0 .6154em 0;
+}
+
+h3,
+.h3-like {
+  font-size: 2.0625em;
+  /* equiv 33px */
+  line-height: 1.4546;
+  margin: 1.4546em 0 .7273em 0;
+}
+
+h4,
+.h4-like {
+  font-size: 1.6875em;
+  /* equiv 27px */
+  line-height: 1.7778;
+  margin: 1.7778em 0 .8889em 0;
+}
+
+h5,
+.h5-like {
+  font-size: 1.4375em;
+  /* equiv 23px */
+  line-height: 1.0435;
+  margin: 2.087em 0  1.0435em 0;
+}
+
+h6,
+.h6-like {
+  font-size: 1.1875em;
+  /* equiv 19px */
+  line-height: 1.2632;
+  margin: 2.5264em 0  1.2632em 0;
+}
+
+.smaller {
+  font-size: .75em;
+  /* equiv 12px */
+  line-height: 2;
+  margin: 2em 0  2em 0;
+}
+
+.small {
+  font-size: .875em;
+  /* equiv 14px */
+  line-height: 1.7143;
+  margin: 1.7143em 0  1.7143em 0;
+}
+
+.big {
+  font-size: 1.125em;
+  /* equiv 18px */
+  line-height: 1.3333;
+  margin: 1.3333em 0  1.3333em 0;
+}
+
+.bigger {
+  font-size: 1.25em;
+  /* equiv 20px */
+  line-height: 1.2;
+  margin: 1.2em 0  1.2em 0;
+}
+
+.biggest {
+  font-size: 1.375em;
+  /* equiv 22px */
+  line-height: 1.0909;
+  margin: 1.0909em 0  1.0909em 0;
+}
+
+/* avoid collapsing margins
+you might need this, depending on your design
+*/
+/*
+h1:first-child, 
+h2:first-child, 
+h3:first-child, 
+h4:first-child, 
+h5:first-child, 
+h6:first-child {
+    margin-top: 0;
+}
+*/
+/* avoid last-child bottom margin */
+ul:last-child,
+ol:last-child,
+dl:last-child,
+blockquote:last-child,
+pre:last-child,
+table:last-child {
+  margin-bottom: 0;
+}
+
+/* avoid supp margin on nested elements */
+li p,
+li ul {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+/* you shall not pass */
+textarea,
+table,
+td,
+th,
+code,
+pre,
+samp,
+div,
+p {
+  word-wrap: break-all;
+  -webkit-hyphens: manual;
+  -moz-hyphens: manual;
+  -ms-hyphens: manual;
+  -o-hyphens: manual;
+  hyphens: manual;
+}
+
+code,
+pre,
+samp {
+  white-space: pre-wrap;
+  font-family: consolas, 'DejaVu Sans Mono', courier, monospace;
+}
+
+code {
+  line-height: 1;
+}
+
+table {
+  margin-bottom: 1.5em;
+}
+
+/*
+UTILITIES
+========================================================================
+*/
+/* Screen-reader only
+------------------------------------------------------------------------*/
+.sr-only {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  overflow: hidden;
+  clip: rect(0, 0, 0, 0);
+  border: 0;
+}
+
+/* Inline
+------------------------------------------------------------------------*/
+.inline {
+  display: inline;
+}
+
+/*
+HEADER
+========================================================================
+*/
+header {
+  background-color: white;
+}
+
+.shape {
+  display: block;
+  height: 3em;
+  float: left;
+}
+
+.trapezoid {
+  border-bottom: 116px solid #4C1E3D;
+  border-left: 0 solid transparent;
+  border-right: 3em solid transparent;
+  height: 0;
+  width: 60px;
+  margin-left: -2em;
+}
+@media screen and (min-width: 40.063em) {
+  .trapezoid {
+    width: 400px;
+  }
+}
+@media screen and (min-width: 64.063em) {
+  .trapezoid {
+    border-bottom: 13.5em solid #4C1E3D;
+    border-left: 0 solid transparent;
+    border-right: 6em solid transparent;
+    height: 0;
+    width: 400px;
+  }
+}
+@media screen and (min-width: 90.063em) {
+  .trapezoid {
+    width: 600px;
+  }
+}
+@media screen and (min-width: 100.063em) {
+  .trapezoid {
+    width: 800px;
+  }
+}
+
+.triangle {
+  width: 0px;
+  height: 0px;
+  border-left: 3em solid transparent;
+  border-right: 3em solid transparent;
+  border-top: 7.3em solid #a68f9e;
+  margin-left: -3em;
+}
+@media screen and (min-width: 40.063em) {
+  .triangle {
+    border-left: 6em solid transparent;
+    border-right: 6em solid transparent;
+    margin-left: -6em;
+  }
+}
+@media screen and (min-width: 64.063em) {
+  .triangle {
+    width: 0px;
+    height: 0px;
+    border-left: 8em solid transparent;
+    border-right: 8em solid transparent;
+    border-top: 13.5em solid #a58e9e;
+    margin-left: -8em;
+  }
+}
+
+.header-deco {
+  display: block;
+  position: absolute;
+  left: 0;
+}
+
+/*
+NAVIGATION
+========================================================================
+*/
+nav {
+  background-color: #007499;
+}
+
+/*
+BODY
+========================================================================
+*/
+html {
+  background-color: #4C1E3D;
+}
+
+body {
+  margin: 0;
+}
+
+main {
+  background-color: #007499;
+  padding-bottom: 5em;
+}
+
+/*
+FOOTER
+========================================================================
+*/
+footer {
+  background-color: #4C1E3D;
+  color: white;
+  text-align: center;
+}
+footer a {
+  color: #d2c7cf;
+  text-decoration: none;
+}
+footer a:hover {
+  text-decoration: underline;
+}
+
+/*
+BUTTONS
+========================================================================
+*/
+button,
+.button {
+  padding: 1em;
+  color: white;
+  border: .2em solid white;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  background: none;
+  font-size: 1em;
+  display: block;
+  margin: 1em auto;
+  cursor: pointer;
+  transition: all linear 0.15s;
+}
+
+button:hover,
+.button:hover {
+  background-color: white;
+  color: #007499;
+}
+
+/*
+IMAGES
+========================================================================
+*/
+/* Responsive images
+------------------------------------------------------------------------*/
+.img-responsive {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Logo
+------------------------------------------------------------------------*/
+.logo {
+  width: 210px;
+  height: 116px;
+  float: right;
+}
+@media screen and (min-width: 64.063em) {
+  .logo {
+    width: auto;
+    height: auto;
+  }
+}
+
+/*
+LISTS
+========================================================================
+*/
+/* Inline list
+------------------------------------------------------------------------*/
+.inline-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.inline-list > li {
+  display: block;
+  float: left;
+}
+
+/*
+TABS
+========================================================================
+*/
+/* Tab content
+------------------------------------------------------------------------*/
+.tab-links a {
+  display: block;
+  color: white;
+  text-decoration: none;
+  padding: 1em;
+  transition: all linear 0.15s;
+}
+
+.tab-links a:hover {
+  background-color: #a68f9e;
+  text-decoration: underline;
+}
+
+.tab-links > li {
+  background-color: #007499;
+  width: 50%;
+  text-align: center;
+}
+@media screen and (min-width: 64.063em) {
+  .tab-links > li {
+    font-size: 1.5em;
+  }
+}
+
+.tab-links li:hover {
+  cursor: pointer;
+  background-color: #a68f9e;
+}
+.tab-links li:hover a {
+  color: #272123;
+}
+
+.tab-links li.active {
+  background-color: #80bacc;
+  color: white;
+}
+
+.tab-links li.active:hover,
+.tab-links li.active a:hover {
+  background: #80bacc;
+  text-decoration: none;
+  cursor: auto;
+}
+
+.tab-links li.active a {
+  color: #272123;
+}
+
+/* Tab content
+------------------------------------------------------------------------*/
+.tab-content {
+  background: none;
+}
+
+.tab {
+  display: none;
+}
+
+.tab.active {
+  display: block;
+}
+
+/*
+WRAPPERS
+========================================================================
+*/
+/* Content wrapper
+------------------------------------------------------------------------*/
+.wrapper {
+  display: block;
+  background-color: white;
+  -moz-border-radius: 0.5em;
+  -webkit-border-radius: 0.5em;
+  border-radius: 0.5em;
+  margin: 1em 0;
+  min-height: 20em;
+  padding: .5em 1.5em;
+}
+
+/*
+DOODLE WIDGET
+========================================================================
+*/
+#doodle-widget {
+  display: block;
+  cursor: pointer;
+  padding: 0;
+}
+@media screen and (min-width: 40.063em) {
+  #doodle-widget {
+    min-height: 40em;
+  }
+}
+
+/*
+COLLECTION
+========================================================================
+*/
+#collection img {
+  width: 200px;
+}

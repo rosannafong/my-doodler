@@ -1,0 +1,16 @@
+/*
+LISTS
+========================================================================
+*/
+/* Inline list
+------------------------------------------------------------------------*/
+.inline-list {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+.inline-list > li {
+  display: block;
+  float: left;
+}

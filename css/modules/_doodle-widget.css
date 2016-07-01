@@ -1,0 +1,9 @@
+/*
+DOODLE WIDGET
+========================================================================
+*/
+.doodle-widget {
+  background-color: white;
+  display: block;
+  height: 15em;
+}

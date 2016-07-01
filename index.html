@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>My Doodler</title>
+    <meta name="description" content="My Doodler canvas.">
+    <meta name="author" content="Rosanna Fong">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/my-doodler-styles.css" type="text/css" media="screen"/>
+    <link href="/images/favicon.ico" rel="icon" type="image/x-icon">
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script type="text/javascript" src="js/doodler.js"></script>
+    <!--[if lt IE 9]>
+      <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body onload="init()">
+    <header>
+      <div class="container">
+        <div class="header-deco">
+          <div class="shape trapezoid"></div>
+          <div class="shape triangle"></div>
+        </div>
+        <img src="images/full-logo.png" class="logo img-responsive" alt="My Doodler small logo."/>
+      </div>
+    </header>
+    <main>
+      <div class="tabs">
+        <nav>
+          <div class="container">
+            <ul class="inline-list tab-links">
+              <li class="active tab1"><a href="#tab1">Doodle</a></li>
+              <li class="tab2"><a href="#tab2">My Collection</a></li>
+            </ul>
+          </div>
+        </nav>
+        <div class="tab-content">
+          <div id="tab1" class="tab active">
+            <div ng-controller="doodle-controller">
+              <div class="container">
+                <div id="doodle-widget" class="wrapper">
+                  <canvas id="doodler-canvas" name="new-doodle" ng-model="newDoodle">
+                    Your browser does not support HTML5 Canvas.</canvas>
+                </div>
+                <button ng-submit="addDoodle()" onclick="addToCollection()">Add doodle to collection</button>
+                <button onclick="clearCanvas(canvas, ctx)">Clear Doodle!</button>
+              </div>
+            </div>
+          </div>
+          <div id="tab2" class="tab">
+            <div class="container">
+              <div id="collection" class="wrapper">
+                <p>Doodles are saved here.</p>
+                <!--ul>
+                  <li ng-repeat="doodle in doodles">
+                    <input type="checkbox" ng-model="doodle.selected" />
+                    <span ng-class="{'selected':doodle.selected}">{{doodle.drawing}}</span>
+                  </li>
+                </ul-->
+              </div>
+              <button class="back-to-doodle">Back to doodling!</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <footer class="footer">
+      <div class="container">
+        <p class="copyright-info">&copy; 2016 <a href="http://rosanna.co.nz/">Rosanna Fong <span class="sr-only"> This link will take you to an external website.</span><span class="fa fa-external-link"></span></a>. My Doodler works best on a modern browser.</p>
+      </div>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.0/jquery.min.js"></script>
+    <script type="text/javascript" src="js/doodler-canvas-touch.js"></script>
+    <script>
+      $(document).ready(function() {
+        $('.tabs .tab-links a').on('click', function(e)  {
+          var currentAttrValue = $(this).attr('href');
+   
+          // Show/Hide Tabs
+          $('.tabs ' + currentAttrValue).show().siblings().hide();
+   
+          // Change/remove current tab to active
+          $(this).parent('li').addClass('active').siblings().removeClass('active');
+   
+          e.preventDefault();
+        });
+
+        $('.back-to-doodle').on('click', function(e)  {
+          $(".tab2").removeClass("active");
+          $(".tab1").addClass("active");
+          $('#tab1').show().siblings().hide();
+          e.preventDefault();
+        });
+      });
+      
+    </script>
+  </body>
+</html>
